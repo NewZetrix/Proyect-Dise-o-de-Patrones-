@@ -63,19 +63,19 @@ public class Main {
         CallableProcedure procedimiento2 = procedimientoOriginal.clonar();
         procedimiento2.ejecutar("Guía educativa visual", "Material interactivo para docentes.");
         
-        //Prueba para denuncias
+        //Control para denuncias
         UsuarioDenunciante denunciante=new UsuarioDenunciante();
         ControladorDenuncias ctrlDenuncias=new ControladorDenuncias(denunciante);
         ctrlDenuncias.registrarDenuncias("Acoso en el trabajo", true);
         ctrlDenuncias.verEstadoDenuncia(1);
         
-        //Prueba para talleres
+        //Control para talleres
         UsuarioEmpoderamiento empoderada = new UsuarioEmpoderamiento();
         ControladorTalleres ctrlTalleres = new ControladorTalleres(empoderada);
         ctrlTalleres.inscribirseTaller("Taller de liderazgo");
         ctrlTalleres.verTalleresDisponibles();
 
-        // Prueba para recursos educativos
+        // Control para recursos educativos
         UsuarioEducativo educativo = new UsuarioEducativo();
         ControladorRecursos ctrlRecursos = new ControladorRecursos(educativo);
         ctrlRecursos.verRecurso();

@@ -81,6 +81,7 @@ public class Main {
         ctrlRecursos.verRecurso();
         ctrlRecursos.buscarRecurso("Derechos Humanos");
 
+        new VISTA.Formulario().setVisible(true);
     }
     
 }
